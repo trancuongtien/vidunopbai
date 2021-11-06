@@ -1,0 +1,96 @@
+/* CSS Document */
+.box{
+	height: 200px;
+	background: red;
+	animation-name: doi-mau;
+	animation-delay: 0.2s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+.box-2{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	margin-top: 200px;
+	animation:  move-1 6s infinite alternate;
+}
+@keyframes move-1{
+	0%{
+		transform: translate(0)
+	}
+	25%{
+		transform: translate(200px,-200px) rotate(360deg) scale(0.5);
+		border-radius: 15%;
+		background: deeppink;
+	}
+	50%{
+		transform: translate(400px,0) rotate(760deg) scale(1.5);
+		border-radius: 35%;
+		background:yellow;
+	}
+	75%{
+		transform: translate(600px, 200px) rotate(1060deg) scale(1.2);
+		border-radius: 50%;
+		background: rgba(127,236,83,1.00)
+	}
+	100%{
+		transform: translate(800px,0) rotate(360deg) scale(2);
+		background: rgba(174,26,210,1.00);
+	}
+}
+@keyframes doi-mau{
+	from{
+		background: yellow;
+/*		transform: (0)*/
+	}
+	to{
+		background: blue;
+		transform:  translate(1000px) rotate(360deg)  scale(1.5);
+		border-radius: 50%;
+	}
+}
+.box-hover{
+	height: 200px;
+	background:lightgrey;
+	overflow: hidden;
+	
+}
+.box-hover:hover{
+	animation:  box-hover 0.5s 1 alternate;
+}
+.box-hover:hover p{
+	animation:  thao 1s 0.5s 1 alternate;
+}
+@keyframes box-hover{
+	0%{
+		opacity: 0.5;
+		transform: scale(1.2)
+	}
+	25%{
+		opacity: 0.1;
+		transform: scale(1.5)
+	}
+	50%{
+		opacity: 0.1;
+		transform: scale(6)
+	}
+	75%{
+		opacity: 1;
+		transform: scale(1.6)
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1)
+	}	
+}
+@keyframes thao{
+	from{
+		transform: translate(-200px)
+	}
+	to{
+		transform: translate(0)
+	}
+}

@@ -1,0 +1,252 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Mulish', sans-serif;
+	font-weight: 300;
+	color: #7D7987;
+	line-height: 1.75;
+	font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+	color: #1f1f1f;
+	line-height: 117%;
+}
+
+.h1{
+	font-size: 48px;
+}
+.h2{
+	font-size: 36px;
+}
+.h3{
+	font-size: 24px;
+}
+.subtitle{
+	font-size: 18px;
+}
+.caption{
+	font-size: 14px;
+}
+.bg-primary{
+	background: #458FF6;
+}
+.bg-secondary{
+	background: #35CCD6;
+}
+.bg-error{
+	background: #FF0A0A
+}
+.bg-success{
+	background: #25C9AB;
+}
+.bg-white{
+	background: white;
+}
+.text-primary{
+	color: #458FF6;
+}
+.text-white{
+	color: white;
+}
+.text-error{
+	color: #FF0A0A
+}
+.text-success{
+	background: #25C9AB;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.text-jutify{
+	text-align: justify;
+}
+.btn{
+	font-size: 18px;
+	padding: 14px 40px;
+	border-radius: 55px;
+	text-decoration: none;
+}
+.btn-primary{
+	background: #458FF6;
+	color: white;
+}
+.btn-outline{
+	background: transparent;
+	color: #458FF6;
+	border: 1.4px solid #458FF6;
+}
+.btn:hover{
+	opacity: 0.8;
+}
+.container-fluid{
+	width: 100%;
+
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+/*
+.row>*{
+	padding: 32px;
+}
+*/
+.row>[class*="col-"]{
+	padding: 32px;
+}
+.g-0>[class*="col-"]{
+	padding: 0 !important;
+}
+.justify-between{
+	justify-content: space-between;
+}
+.justify-center{
+	justify-content: center;
+}
+.justify-end{
+	justify-content: flex-end;
+}
+.align-s-center{
+	align-self: center;
+}
+.align-s-end{
+	align-self: flex-end;
+}
+.align-center{
+	align-items: center;
+}
+.col-1{
+	width: 8.33%
+}
+.col-2{
+	width: 16.66%
+}
+.col-3{
+	width: 25%
+}
+.col-4{
+	width: 33.33%;
+}
+.col-5{
+	width: 41.66%
+}
+.col-6{
+	width: 50%
+}
+.col-7{
+	width: 58.33%
+}
+.col-8{
+	width: 66.66%
+}
+.col-9{
+	width: 75%
+}
+.col-10{
+	width: 83.33%
+}
+.col-11{
+	width: 91.66%
+}
+.col-12{
+	width: 100%;
+}
+.p-0{
+	padding: 0 !important;
+}
+.p-1{
+	padding: 8px;
+}
+.pt-1{
+	padding-top: 8px;
+}
+.pb-1{
+	padding-bottom: 8px;
+}
+.ps-1{
+	padding-left: 8px;
+}
+.pe-1{
+	padding-right: 8px;
+}
+.px-1{
+	padding: 0 8px;
+}
+.py-1{
+	padding: 8px 0;
+}
+.p-2{
+	padding: 16px;
+}
+.px-2{
+	padding:0 16px;
+}
+.py-5{
+	padding: 40px 0px;
+}
+.py-9{
+	padding: 56px 0;
+}
+.pt-9{
+	padding-top: 56px;
+}
+.pt-20{
+	padding-top: 80px;
+}
+/*margin*/
+.m-1{
+	margin: 8px;
+}
+.mt-1{
+	margin-top:8px;
+}
+
+.mb-1{
+	margin-bottom: 8px;
+}
+.ms-1{
+	margin-left: 8px;
+}
+.me-1{
+	margin-right:8px
+}
+.mx-1{
+	margin: 0 8px;
+}
+.my-1{
+	margin:8px 0;
+}
+.mt-2{
+	margin-top:16px;
+}
+.mb-3{
+	margin-bottom: 24px;
+}
+.mb-4{
+	margin-bottom: 32px;
+}
+.mx-auto{
+	margin: 0 auto;
+}
+.ms-auto{
+	margin-right: auto;
+}
+.mt-10{
+	margin-top: 80px;
+}
